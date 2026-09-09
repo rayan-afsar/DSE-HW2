@@ -16,6 +16,9 @@ DSE 511 – Fall 2026
 
     License (if known): [e.g., CC-BY]
 
+    References: 
+    1. Neuron names: https://www.wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html
+
 # Methods
 ## Data Cleaning (Partner A)
 
