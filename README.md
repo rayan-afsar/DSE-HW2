@@ -6,25 +6,31 @@ DSE 511 – Fall 2026
 
 # Dataset Information
 
-    Source: [Insert dataset name + link (e.g., Our World in Data)]
+    Source: OpenWorm Hermaphrodite Modified Edgelist
+    https://github.com/openworm/ConnectomeToolbox/blob/main/cect/data/herm_full_edgelist_MODIFIED.csv
 
-    Date accessed: [Insert date]
+    Date accessed: 9/8/26
 
-    Description: Briefly describe the dataset (variables, units, scope).
+    Description: The data set is a list of synapses and their weights in the connectome of the hermaphrodite *C. elegans*.
 
-    Size: [e.g., 2.3 MB, 10,000 rows]
+    Size: 240 KB, 7394 rows
 
-    License (if known): [e.g., CC-BY]
+    License: MIT license
 
     References: 
     1. Neuron names: https://www.wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html
+    2. OpenWorm Reference: https://openworm.org/ConnectomeToolbox/
 
 # Methods
-## Data Cleaning (Partner A)
+## Data Cleaning (Daniel Jackson Archer)
 
-    List specific steps (e.g., handled missing values, renamed variables, filtered rows).
+    1. Checked dimensions of dataset
+    2. Checked for missing values and duplicate values
+    3. Created a feature `isElectrical` that casts `Type` feature from categorical data to boolean data
+    4. Created `isSourceLeft`, `isSourceRight`, `isTargetLeft`, and `isTargetRight` columns for synapses based on descriptions of neurons from reference [1]
+    5. Created `isSourceMotorNeuron`, `isTargetMotorNeuron`, `isSourceInterneuron`, and `isTargetInterneuron` features by cross referencing neuron names with reference [1] using regex patterns
 
-    Tools/libraries used (e.g., pandas, numpy).
+    Tools/libraries used: pandas, regex, reference [1]
 
 ## Exploratory Data Analysis (Partner B)
 
@@ -44,11 +50,11 @@ DSE 511 – Fall 2026
 
 # Collaboration Notes
 
-    Partner A contributions: [e.g., data cleaning, repo setup]
+    Partner A contributions: data inspection, README initialization, data cleaning and deduplication checks, feature engineering
 
     Partner B contributions: [e.g., EDA, visualization]
 
-    Both: [e.g., documentation, merge conflict resolution]
+    Both: documentation, merge conflict, dataset search
 
 # Reproducibility Instructions
 
