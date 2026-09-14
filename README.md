@@ -47,7 +47,9 @@ Overall, the distribution of connections, regardless of their category, followed
 
 In general, connections had the same Gamma distribution in terms of their connection weight, although there were more heavily weighted connections (weight > 20) that were chemical as opposed to electrical. Interestingly, there is a major cluster of electrical connections that had a weight of 14 (> 200 connections), although we didn't dive further as to why that is. Also, most engineered fields did not have very strong correlations with each other (r-values of $>\pm0.06$). Interestingly, the `isElectrical` field had the weakest correlation with all of the others.
 
+![heatmap of correlations between different binary fields in the C. elegans connectome](heatmap.png)
 
+![histogram comparing the edge weights of connections targeting interneurons versus ones that don't](hist.png)
 
 # Collaboration Notes
 
