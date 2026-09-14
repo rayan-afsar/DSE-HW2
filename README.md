@@ -70,6 +70,6 @@ pip install -r requirements.txt
 source .venv/bin/activate
 ```
 
-Open and run `DSE511_HW2.ipynb`.
+Open and run `notebooks/DSE511_HW2.ipynb`.
 
 Dependencies: pandas, seaborn, and matplotlib.pyplot. (See `requirements.txt` for full list)
