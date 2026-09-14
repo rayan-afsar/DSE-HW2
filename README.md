@@ -13,7 +13,7 @@ DSE 511 – Fall 2026
 
     Description: The data set is a list of synapses and their weights in the connectome of the hermaphrodite *C. elegans*.
 
-    Size: 240 KB, 7394 rows
+    Size: 245.9 kB, 7394 rows
 
     License: MIT license
 
@@ -34,11 +34,16 @@ DSE 511 – Fall 2026
 
 ## Exploratory Data Analysis (Partner B)
 
-    Summary statistics (e.g., mean, median, correlation).
+The summary statistics were based on the one numeric variable, `Weight`, which corresponds to the edge weight of a single connection. This was calculated for the whole connectome, as well as for each of the engineered fields.
 
-    Visualizations (e.g., histogram, scatterplot).
+| Count | Mean | Median | Standard Deviation | Min | Max |
+| ----- | ---- | ------ | ------------------ | --- | --- |
+| 7394 | 5.38 | 3 | 7.56 | 1 | 142 |
 
-    Insights or patterns observed.
+
+For visualization of the data, I used a histogram for the relation between all connections and their edge weight. I then used overlaid histograms for each of the engineered fields to compare the distributions for True and False values. Finally, I employed a heatmap to see if there were potential relationships between different engineered categories.
+
+Overall, the distribution of connections, regardless of their category, followed a $\text{Gamma}$ distribution, which was expected, and which was so heavily weighted toward the low end of the distribution that I had to use a log scale to visualize it beyond an edge weight of roughly 15. 
 
 # Results
 
@@ -52,7 +57,7 @@ DSE 511 – Fall 2026
 
     Partner A contributions: data inspection, README initialization, data cleaning and deduplication checks, feature engineering
 
-    Partner B contributions: [e.g., EDA, visualization]
+    Partner B contributions: repo setup, EDA, and data visualization
 
     Both: documentation, merge conflict, dataset search
 
