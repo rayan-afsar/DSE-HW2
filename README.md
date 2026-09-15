@@ -68,4 +68,5 @@ Use conda/mamba to create an environment with the dependencies in requirements.t
 2. `conda activate DSE-HW2-env`
 3. `conda install --file requirements.txt`
 
-
+# Merge Conflict Reflection
+We created a merge conflict by first merging the `data-analysis` branch to `main`, which modified, among other things, `README.md`. We then edited some of the same `README.md` lines on a new branch (`merge-conflict`) that did not pull from `main` after the `data-analysis` pull request and then initiated a pull request for `merge-conflict`, resulting in a merge conflict. To resolve this, we used the conflict editor tool on the GitHub website to select changes to approve for the PR between `merge-conflict` and `main`.
